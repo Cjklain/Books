@@ -1,0 +1,115 @@
+body {
+    background-color: #865439;
+    margin: 0;
+    padding: 0;
+}
+.shelf {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.shelf button{
+    padding: 0.5rem;
+    border-radius: 5%;
+    background-color: #876445;
+}
+
+.shelf button:hover{
+    background-color: #926d4c;
+}
+
+.rack {
+    display: flex;
+    flex-wrap: wrap;
+    border: 10px solid #2D2424;
+    height: calc(90vh - 20px);
+}
+.book{
+    border: 2px solid black;
+    gap: 10px;
+    min-width: 100px;
+    justify-content: center;
+    max-height: 200px;
+    
+}
+
+.wrapper{
+    margin-top: 15px;
+}
+
+.book p {
+    border: solid 2px black;
+}
+
+.modal-outer{
+    background-color: grey;
+    opacity: 0.0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    transition: 0.2s;
+}
+
+.modal-outer.open{
+    opacity: 0.9;
+    pointer-events: all;
+}
+
+.modal-inner{
+    width: 300px;
+    height: 450px;
+    
+
+
+}
+
+.modal-inner form{
+    color: black;
+    background-color: #F4DFBA;
+    border: solid black 2px;
+
+}
+
+.modal-inner form label{
+    display: block;
+    font-size: 2rem;
+    /* margin-top: 10px; */
+    padding: 10px;
+    
+}
+
+.modal-inner form input{
+    border: solid 1px #999;
+    margin-left: 5px;
+    padding: 10px;
+    width: 85%;
+    font-size: 1em;
+}
+
+
+
+.modal-inner form input[type="submit"]{
+    padding: .5em 1em;
+    border-radius: 6px;
+    background: #333;
+    color: #fff;
+    display: block;
+    font-size: .8em;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 30%;
+}
+
+.modal-inner form input[type="submit"]:hover{
+    background-color: rgb(68, 67, 67);
+}
